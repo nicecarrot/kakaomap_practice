@@ -1,0 +1,49 @@
+@import "../varibale.module.scss";
+@import "../mixin.module.scss";
+
+.headerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
+  .headerWrapper {
+    background-color: $bg__header;
+    color: $color__header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $gutter__x;
+
+    .logoWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        margin: $gutter__y 0;
+        padding-right: 3rem;
+        cursor: pointer;
+        &:hover {
+          color: $color__header__hover;
+        }
+      }
+    }
+
+    .nav {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      span {
+        padding: 0 1rem;
+        &:hover {
+          color: $color__header__hover;
+        }
+      }
+    }
+
+    .toggle {
+      cursor: pointer;
+      font-size: 1.25rem;
+    }
+  }
+}

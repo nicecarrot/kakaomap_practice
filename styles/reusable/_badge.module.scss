@@ -1,0 +1,37 @@
+@import "../varibale.module.scss";
+
+.brandbadge {
+  width: fit-content;
+  height: fit-content;
+  border-radius: $badge_border_radius;
+  font-size: $badge__font_size;
+  margin: $badge__margin;
+  padding: $badge__padding;
+  font-weight: 600;
+  text-shadow: $text_shadow;
+}
+
+.cu {
+  color: $color__cu;
+  background-color: $bg__cu;
+}
+
+.gs25 {
+  color: $color__gs;
+  background-color: $bg__gs;
+}
+
+.seven {
+  color: $color__seven;
+  background-color: $bg__seven;
+}
+
+.ministop {
+  color: $color__mini;
+  background-color: $bg__mini;
+}
+
+.emart {
+  color: $color__emart;
+  background-color: $bg__emart;
+}

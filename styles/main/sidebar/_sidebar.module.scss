@@ -1,0 +1,20 @@
+@import "../../varibale.module.scss";
+@import "../../mixin.module.scss";
+
+.sidebarWrapper {
+  padding: $gutter__y $gutter__x;
+  border-right: 1px solid $border__sidebar;
+  background-color: $bg__sidebar;
+}
+
+@include mobile {
+  .sidebarWrapper {
+    display: none;
+  }
+}
+
+@include tablet {
+  .sidebarWrapper {
+    display: none;
+  }
+}

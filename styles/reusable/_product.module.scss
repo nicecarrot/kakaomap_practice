@@ -1,0 +1,105 @@
+@import "../varibale.module.scss";
+
+.productContainer {
+  width: 224px;
+  height: 254px;
+  border-radius: 1rem;
+  position: relative;
+  padding: 2px; // border-width
+  transition: all 0.5s;
+  cursor: pointer;
+
+  border-color: transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  &.cu {
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__cu 0%, $bg__cu 100%);
+  }
+
+  &.gs {
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__gs 0%, $bg__gs 100%);
+  }
+
+  &.emart {
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__emart 0%, $bg__emart 100%);
+  }
+
+  &.seven {
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__seven 0%, $bg__seven 100%);
+  }
+
+  &.mini {
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__mini 0%, $bg__mini 100%);
+  }
+
+  &:hover {
+    padding: 6px;
+    transition: all 0.5s;
+  }
+
+  .absoluteEvent {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+
+    .event {
+      border-radius: $product_border_radius;
+      color: $color__event;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 8px;
+      background-color: lightcoral;
+    }
+  }
+
+  .productWrapper {
+    background-color: $bg__product;
+    border-radius: 1rem;
+    width: 100%;
+
+    .productContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .imgWrapper {
+        flex: 1;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .productInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.125rem;
+
+        .name {
+          font-weight: 500;
+          margin-bottom: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .price {
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

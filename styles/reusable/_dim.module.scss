@@ -1,0 +1,8 @@
+@import "../varibale.module.scss";
+
+.dimWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg__dim;
+  position: relative;
+}

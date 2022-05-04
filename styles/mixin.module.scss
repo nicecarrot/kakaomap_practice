@@ -1,0 +1,13 @@
+@import "./varibale.module.scss";
+
+@mixin mobile {
+  @media screen and (max-width: $breakpoint__mobile_max) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $breakpoint__tablet_min) and (max-width: $breakpoint__tablet_max) {
+    @content;
+  }
+}

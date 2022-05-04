@@ -1,0 +1,32 @@
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  opacity: 30%;
+}
+
+.slide_active {
+  opacity: 100%;
+  transition: 1.5s all ease-in-out;
+}
+
+.image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50px;
+}
+
+.ArrowLeft {
+  position: relative;
+  font-size: 3rem;
+}
+
+.ArrowRight {
+  position: relative;
+  font-size: 3rem;
+}

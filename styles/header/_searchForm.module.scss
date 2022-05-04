@@ -1,0 +1,48 @@
+@import "../varibale.module.scss";
+
+.searchFormWrapper {
+  background-color: $bg__header__search;
+  padding: $gutter__y 8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .selectBrand {
+    flex: 1;
+    width: max-content;
+  }
+
+  .selectEvent {
+    flex: 1;
+  }
+
+  .selectBrand,
+  .selectEvent {
+    select {
+      padding: 8px 14px;
+      width: 100%;
+    }
+  }
+
+  .inputName {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input {
+      padding: 8px 14px;
+      width: 100%;
+    }
+
+    .searchBtn {
+      position: absolute;
+      border: none;
+      background-color: transparent;
+      right: 0;
+      padding: 8px;
+      cursor: pointer;
+    }
+  }
+}

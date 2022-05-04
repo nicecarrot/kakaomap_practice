@@ -1,0 +1,30 @@
+@import "../varibale.module.scss";
+
+.skeletonContainer {
+  width: 224px;
+  height: 254px;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  padding: 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+  .emptyBox {
+    background-color: lightgray;
+    border-radius: 1rem;
+
+    &.img {
+      width: 200px;
+      height: 200px;
+    }
+
+    &.text {
+      width: 100px;
+      height: 20px;
+    }
+  }
+}
