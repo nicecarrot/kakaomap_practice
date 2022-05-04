@@ -9,7 +9,7 @@ const Headinfo = () => {
         <title>Kakao Map</title>
       </Head>
       <Script
-        src="https://kit.fontawesome.com/8886ab1b1d.js"
+        src="https://developers.kakao.com/sdk/js/kakao.js"
         crossOrigin="anonymous"
       ></Script>
     </>
